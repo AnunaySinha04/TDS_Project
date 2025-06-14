@@ -1,0 +1,21 @@
+providers:
+  - id: "my-api"
+    config:
+      url: "https://your-vercel-url/api/"
+      method: "POST"
+      headers:
+        Content-Type: application/json
+      body: |
+        {
+          "question": "{{prompt}}"
+        }
+
+tests:
+  - prompt: "What model should I use for GA5?"
+    assert:
+      - type: includes
+        value: "gpt-3.5"
+  - prompt: "Can I use Ollama in the proxy?"
+    assert:
+      - type: includes
+        value: "Ollama"

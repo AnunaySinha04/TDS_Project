@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+openai
+faiss-cpu
+python-dotenv
+tqdm
+pydantic
+numpy
+requests
+beautifulsoup4
+playwright
+pytesseract
+Pillow
