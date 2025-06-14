@@ -17,7 +17,7 @@ client = OpenAI(
     base_url=os.getenv("OPENAI_BASE_URL", "https://aipipe.org/openrouter/v1")
 )
 
-CHAT_MODEL = os.getenv("CHAT_MODEL", "google/gemini-2.0-flash-lite-001")
+CHAT_MODEL = os.getenv("CHAT_MODEL", "gpt-3.5-turbo")
 
 app = FastAPI()
 
