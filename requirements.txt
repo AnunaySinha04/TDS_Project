@@ -1,5 +1,5 @@
 fastapi
 pydantic
-openai
+openai==1.86.0
 uvicorn
 python-dotenv
